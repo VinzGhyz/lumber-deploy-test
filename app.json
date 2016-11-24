@@ -1,0 +1,24 @@
+{
+  "name": "PushForKite",
+  "description": "The admin microservice of PushForKite",
+  "website": "http://www.forestadmin.com/lumber",
+  "repository": "https://github.com/ForestAdmin/lumber",
+  "env": {
+    "FOREST_AUTH_KEY": {
+      "description": "A random JWT signing key to protect your admin API",
+      "value": "a14ecc3f40746fac10d6259de5ce7ea3d5148fc8fe52d08817b329bcc731f3a6e6f8439f87a43b078fcb1fda43a07f9d"
+    },
+    "FOREST_SECRET_KEY": {
+      "description": "The Forest secret key",
+      "value": "42480086e7a5fdde4394479c070d73ebe03f95c860c1df60517752dbe0477e9f"
+    },
+    "DATABASE_URL": {
+      "description": "The remote database connection URL",
+      "value": "postgres://<user>:<password>@<host>:<port>/<databaseName>"
+    },
+    "SSL_DATABASE": {
+      "description": "Specify if a SSL database connection is required.",
+      "value": "true"
+    }
+  }
+}
